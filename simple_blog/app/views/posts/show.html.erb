@@ -10,7 +10,7 @@
 <hr>
 
 <h3>Add Comments</h3>
-<%= form_for([@post, post.comments.build]) do |f| %>
+<%= form_for([@post, @post.comments.build]) do |f| %>
   <p>
     <%= f.label :username %><br>
     <%= f.text_field(:username, {:class => "form-control"}) %>
