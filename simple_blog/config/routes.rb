@@ -5,5 +5,8 @@ Rails.application.routes.draw do
 
   get 'about' => 'pages#about'
 
+  #creates all the crud routes for specified controller
+  resources :posts
+
 
 end
