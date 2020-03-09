@@ -73,3 +73,14 @@ Use`rails destroy controller comment` then generate the appropriately named cont
 
 1. Add styles in the `/app/assets/stylesheets` directories appropriate scss file
     - You can alternate classes in lists using cycle as seen here: `<tr class="<%=  cycle('list_line_odd', 'list_line_even')%>">`
+
+1. Generate static pages i.e. to generate an about and home page in a pages directory use `rails generate controller pages home about` and edit the views appropriately
+
+1. Run tests from terminal via `rake test`
+
+1. Modify page layout to dynamically get content, i.e. dynamically provide titles via adding `<% provide(:title, "Your Page TItle") %>` to each page and `<%= yield(:title) %>` in the `application.html.erb` inside `/views/layouts/` directory
+
+1. Add helper functions for the entire app in the `/helpers/applciation_helper.rb` file and access in a view via `<%= <function name>() %>`  
+
+1. Find walkthrough of banas rails tut (change number to see prior tuts) [here](http://www.newthinktank.com/2015/03/ruby-rails-tutorial-3/)
+
